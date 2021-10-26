@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .maintext{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: #152c11;
+        }
+        .neontext p{
+            color: #a4fc52;
+        }
+        .neontext h1{
+            font-size: 4rem;
+            text-align: center;
+            font-weight: bold;
+            animation: light 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes light{
+            from{
+                color: #fff;
+                text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2,0 0 50px #00fff2,0 0 60px #00fff2,0 0 70px #00fff2,0 0 90px #00fff2;}
+
+                to{
+                color: lightgrey;
+                text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2,0 0 50px #00fff2,0 0 60px #00fff2,0 0 70px #00fff2,0 0 80px #00fff2,0 1 90px #00fff2;}
+        }
+    </style>
+</head>
+<body>
+    <div class="maintext">
+        <div class="neontext">
+            <p>css effects</p>
+            <h1 class="cooltext">maissa bord</h1>
+        </div>
+    </div>
+</body>
+</html>
